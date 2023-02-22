@@ -15,6 +15,10 @@ function contar(){
         let i = Number(inicio.value)
         let  f = Number(fim.value)
         let p = Number(passo.value)
+        if(p <= 0){
+            window.alert('PASSO INVÁLIDO, considerando 1 como passo (auto)')
+            p = 1
+        }
         if(i < f){
             //contagem crescente
             // += --> Concatenação
